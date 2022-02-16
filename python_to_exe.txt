@@ -1,0 +1,5 @@
+#https://towardsdatascience.com/how-to-easily-convert-a-python-script-to-an-executable-file-exe-4966e253c7e9
+
+cd  C:\users\hello\appdata\local\packages\pythonsoftwarefoundation.python.3.9_qbz5n2kfra8p0\localcache\local-packages\python39\site-packages
+
+python -m auto_py_to_exe
