@@ -1,0 +1,17 @@
+#in local Neo4j:
+#delete all previous process alternatives
+MATCH (op),(ob) WHERE op.name STARTS WITH 'N0' AND ob.name STARTS WITH "RN0" DETACH DELETE op, ob;
+MATCH (op),(ob) WHERE op.name STARTS WITH 'N1' AND ob.name STARTS WITH "RN1" DETACH DELETE op, ob;
+
+#query for a example:
+MATCH (operation)-[Relationship]-(entity) WHERE operation.name STARTS WITH 'N01'
+RETURN *;
+
+#if nothing return
+#run the auto_generate_process_local.exe 
+
+#try again with the example
+MATCH (operation)-[Relationship]-(entity) WHERE operation.name STARTS WITH 'N01'
+RETURN *;
+
+#it should return one of the newly generated solution
