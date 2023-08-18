@@ -1,0 +1,6 @@
+﻿UID (optional),Name,Description,hasTLIRCatalogue,hasKPI,hasMetrics,hasMinimumValue,hasMaximumValue,actual value,status
+4-stellig reicht,TPR_30,The RC of every station 40 Shall be 11K€/MSN,Industrial Means Requirements,"Industrial asset costs
+Labour costs",RC_STATION,None,11000,0,detault
+4-stellig reicht,TPR_30,The new system shall not exceed production hours for structural assembly work of 60 hours at station,Industrial Means Requirements,Labour costs,MH_STATION,None,60,0,detault
+4-stellig reicht,"TPR_87, TPR_88",Transportation tooling shall contribute to an overall Equipment Effectiveness (EE) of min. 95% for a workstation,Process stability / maturity Requirements ,Lead time,OEE_STATION,0.95,None,0,detault
+4-stellig reicht,TPR_87,The system shall achieve a baseline rate of A321 Aircraft per year of 115 at a peak rate of 10 per month.,Transition / Ramp-up ,Production ramp up,ANNUAL_THROUGHPUT,115,None,0,detault

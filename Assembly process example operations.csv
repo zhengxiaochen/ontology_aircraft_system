@@ -1,0 +1,28 @@
+﻿Operation Name,Product input,Process automation mode, Resource needed (1),Number (1), Resource needed (2),Number (2), Resource needed (3),Number (3), Resource needed (4),Number (4), Resource needed (5),Number (5), Resource needed (6),Number (6), Resource needed (7),Number (7), Resource needed (8),Number (8), Duration,Predecesor operation
+Jig-in,1 per aircarft,Manual,Mechanical Operator,1,Transportation tooling,1,,,,,,,,,,,,,60,
+Set up working envirionment,1 per aircarft,"Manual/Automated
+--> only Manual?",Mechanical Operator,2,,,,,,,,,Station platform,1,Station,1,Crane,1,10 mins,Jig-in
+Set in position Rails and LFT,1 per 1/2 aicraft orbit,Automated,Automation Operator,2,Light Flex Track Robot,1,Light Flex Track Rail,1,,,,,Station platform,1,Station,1,,,10 mins,Set up working envirionment
+Camera at stating holes,1 per 1/4 aicraft orbit,Automated,Automation Operator,1,Light Flex Track Robot,1,Light Flex Track Rail,1,,,,,Station platform,1,Station,1,,,15 mins,Set in position Rails and LFT
+"Drilling orbital 4,8",1 per 1/4 aicraft orbit,Automated,Automation Operator,1,Light Flex Track Robot,1,Light Flex Track Rail,1,,,,,Station platform,1,Station,1,,,125 mins,Camera at stating holes
+Drilling template installation,1 per 1/4 aicraft orbit,Manual,Mechanical Operator,2,,,,,,,,,Station platform,1,Station,1,,,25 mins,Set up working envirionment
+Fixation drillig template suite manual,1 per 1/4 aicraft orbit,Manual,Mechanical Operator,2,,,,,,,Drilling template,1,Station platform,1,Station,1,,,30 mins,Drilling template installation
+"Drilling (with adapter) 3,2 on Stringers int and drilling template",1 per 1/4 aicraft orbit,Manual,Mechanical Operator,2,,,,,Hand drilling machine,2,Drilling template,1,Station platform,1,Station,1,,,185 mins,Fixation drillig template suite manual
+Deinstall drilling template,1 per 1/4 aicraft orbit,Manual,Mechanical Operator,2,,,,,,,Drilling template,1,Station platform,1,Station,1,,,25 mins,"Drilling (with adapter) 3,2 on Stringers int and drilling template"
+Set in position temporary fastener,1 per 1/4 aicraft orbit,Manual,Mechanical Operator,2,,,,,,,,,Station platform,1,Station,1,,,15 mins,Deinstall drilling template
+Set up the fixations LGP/Hi-Lite automatic,1 per 1/4 aicraft orbit,Automated,Automation Operator,1,Light Flex Track Robot,1,Light Flex Track Rail,1,,,,,Station platform,1,Station,1,,,20 mins,"Drilling orbital 4,8"
+Set up the fixations LGP/Hi-Lite manual,1 per 1/4 aicraft orbit,Manual,Mechanical Operator,2,,,,,,,,,,,,,,,35 mins,Set in position temporary fastener
+Riveting buttstraps and stabiliser automatic,1 per 1/4 aicraft orbit,Automated,Automation Operator,1,Light Flex Track Robot,1,Light Flex Track Rail,1,,,,,Station platform,1,Station,1,,,90 mins,Set up the fixations LGP/Hi-Lite automatic
+Riveting buttstraps and stabiliser manual,1 per 1/4 aicraft orbit,Manual,Mechanical Operator,2,,,,,,,,,,,,,,,180 mins,Set up the fixations LGP/Hi-Lite manual
+"Deburring int, positioning , attach them automatic",1 per 1/4 aicraft orbit,Automated,Automation Operator,1,Light Flex Track Robot,1,Light Flex Track Rail,1,,,,,Station platform,1,Station,1,,,25 mins,Riveting buttstraps and stabiliser automatic
+"Deburring int, positioning , attach them manual",1 per 1/4 aicraft orbit,Manual,Mechanical Operator,2,,,,,,,,,,,,,,,45 mins,Riveting buttstraps and stabiliser manual
+Deinstall LFT and rails,1 per 1/4 aicraft orbit,Automated,Automation Operator,1,Light Flex Track Robot,1,Light Flex Track Rail,1,,,,,Station platform,1,Station,1,Crane,1,35 mins,"Deburring int, positioning , attach them automatic"
+Cleanup and add sealant,1 per 1/2 aicraft orbit,Manual,Mechanical Operator,2,,,,,,,,,Station platform,1,Station,1,,,35 mins,"""Deburring int, positioning , attach them automatic"" OR ""Deburring int, positioning , attach them manual"""
+Inspection,1 per 1/2 aicraft orbit,Manual,Mechanical Operator,2,,,,,,,,,Station platform,1,Station,1,,,55 mins,Cleanup and add sealant
+Jig-out,,Manual,Mechanical Operator,1,Transportation tooling,1,,,,,,,,,,,,,60,Inspection
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,
